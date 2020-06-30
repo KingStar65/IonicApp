@@ -4,12 +4,24 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'submit',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'submit',
+    loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
+  },
+  {
+    path: 'expense',
+    loadChildren: () => import('./expense/expense.module').then( m => m.ExpensePageModule)
+  },
+  {
+    path: 'submit',
+    loadChildren: () => import('./submit/submit.module').then( m => m.SubmitPageModule)
+  },
+  {
+    path: 'expense',
+    loadChildren: () => import('./expense/expense.module').then( m => m.ExpensePageModule)
   }
 ];
 
