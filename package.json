@@ -20,16 +20,17 @@
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
     "@ionic-native/core": "^5.0.7",
+    "@ionic-native/http": "^5.27.0",
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
-    "@ionic/app-scripts": "2.1.4",
-    "typescript": "2.3.4",
     "cordova-android": "^8.1.0",
     "rxjs": "~6.5.1",
     "server": "^1.0.29",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~3.8.3",
+    "@ionic/app-scripts": "3.2.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
@@ -38,6 +39,7 @@
     "@angular/compiler-cli": "~9.1.6",
     "@angular/language-service": "~9.1.6",
     "@ionic/angular-toolkit": "^2.1.1",
+    "@ionic/app-scripts": "^3.2.4",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -57,8 +59,7 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "~5.4.3",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
+    "tslint": "~6.1.0"
   },
   "description": "An Ionic project",
   "cordova": {
@@ -75,5 +76,14 @@
     "platforms": [
       "android"
     ]
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingStar65/IonicApp.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingStar65/IonicApp/issues"
   }
 }
